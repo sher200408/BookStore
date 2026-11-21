@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Kitob do'koni</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <nav class="navbar bg-success sticky-top">
+        <div class="container">
+            <span class="navbar-brand text-white mb-0 h1"><i class="bi bi-book"></i> Kitob do'koni</span>
+        </div>
+    </nav>
+
+    <main id="content" class="container py-3"></main>
+
+    <!-- pastki menyu -->
+    <nav class="navbar fixed-bottom bg-body-tertiary border-top p-0">
+        <div class="d-flex w-100 text-center">
+            <button class="tab btn btn-link text-decoration-none text-secondary flex-fill py-2" data-tab="katalog" onclick="goTo('katalog')">
+                <i class="bi bi-book d-block fs-5"></i><small>Katalog</small>
+            </button>
+            <button class="tab btn btn-link text-decoration-none text-secondary flex-fill py-2" data-tab="sevimlilar" onclick="goTo('sevimlilar')">
+                <i class="bi bi-heart d-block fs-5"></i><small>Sevimlilar</small>
+            </button>
+            <button class="tab btn btn-link text-decoration-none text-secondary flex-fill py-2" data-tab="savatcha" onclick="goTo('savatcha')">
+                <i class="bi bi-cart3 d-block fs-5"></i><small>Savatcha</small>
+                <span id="cart-badge" class="badge bg-danger rounded-pill d-none">0</span>
+            </button>
+            <button class="tab btn btn-link text-decoration-none text-secondary flex-fill py-2" data-tab="buyurtmalar" onclick="goTo('buyurtmalar')">
+                <i class="bi bi-box-seam d-block fs-5"></i><small>Buyurtmalar</small>
+            </button>
+        </div>
+    </nav>
+
+    <!-- kitob haqida oyna -->
+    <div class="modal fade" id="bookModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content" id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- xabar -->
+    <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
+        <div id="toast" class="toast text-bg-dark" role="alert">
+            <div class="toast-body" id="toast-text"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
