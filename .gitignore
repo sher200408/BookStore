@@ -1,0 +1,22 @@
+# Virtual muhit
+venv/
+.venv/
+env/
+.env
+# Maxfiy sozlamalar (Tokenlar)
+.env
+
+# Ma'lumotlar bazasi fayllari
+*.db
+*.DEBUG_MODE
+*.kitob.db
+
+# Python kesh fayllari
+__pycache__/
+*.py[cod]
+
+
+.env
+.idea
+.idea/
+
