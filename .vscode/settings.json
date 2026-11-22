@@ -1,0 +1,18 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true,
+                    "passphrase": "ip7dabBvxMKrvK7eIKV5OpyfQkzyq8wF"
+                }
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "name": "render",
+            "connectString": "postgresql://kitob_db_mimk_user:ip7dabBvxMKrvK7eIKV5OpyfQkzyq8wF@dpg-dc0t00m7bikc73bqckq0-a.frankfurt-postgres.render.com/kitob_db_mimk"
+        }
+    ]
+}
